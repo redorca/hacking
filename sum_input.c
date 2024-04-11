@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
         puttr = fgets(line, LINELENGTH, stdin);
         tok = strtok(puttr, " ");
         ndx = 0;
-        while (tok != NULL)
+        while ((tok != NULL) && (ndx < total))
         {
                 sequence[ndx++] = strtod(tok, NULL);
                 tok = strtok(NULL, " ");

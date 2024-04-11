@@ -1,2 +1,5 @@
 *
 !.gitignore
+!sequencing.c
+!sum_input.c
+!array_reverse.c

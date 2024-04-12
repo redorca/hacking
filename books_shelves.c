@@ -20,7 +20,7 @@ int main()
     int end;
     int total_number_of_shelves;
     scanf("%d", &total_number_of_shelves);
- 
+
     int total_number_of_queries;
     scanf("%d", &total_number_of_queries);
 
@@ -31,7 +31,7 @@ int main()
         total_number_of_pages[i] = (int*) malloc(BOOKS_PER_SHELF * sizeof(int));
         memset(total_number_of_pages[i], 0, BOOKS_PER_SHELF );
     }
-    total_number_of_books = (int *)malloc(sizeof(int) * total_number_of_shelves); 
+    total_number_of_books = (int *)malloc(sizeof(int) * total_number_of_shelves);
     while (total_number_of_queries--) {
         int type_of_query;
         scanf("%d", &type_of_query);
@@ -67,6 +67,6 @@ int main()
     if (total_number_of_pages) {
         free(total_number_of_pages);
     }
- 
+
     return 0;
 }
